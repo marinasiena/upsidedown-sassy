@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+button:focus, textarea:focus {
+  outline: none; }
+
+img {
+  max-width: 199%;
+  width: 100%; }
+
+body {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Crimson Text", serif;
+  background: url("https://www.transparenttextures.com/patterns/grid.png") #170c02;
+  color: #b7ada5; }
+
+h1, h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  color: #d1c6bc; }
+  @media screen and (min-width: 600px) {
+    h1, h2 {
+      font-size: 4rem; } }
+
+h2 {
+  font-size: 2rem; }
+  @media screen and (min-width: 600px) {
+    h2 {
+      font-size: 3rem; } }
+
+article {
+  margin-bottom: 2%; }
+
+.header-hero {
+  background: url(../images/brewpic.jpg) no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  position: relative; }
+
+.logo {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  display: block; }
+  @media screen and (min-width: 900px) {
+    .logo {
+      bottom: -83px; } }
+
+.logo img {
+  animation: rotate 20s linear 2; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg); }
+  100% {
+    transform: rotateX(359deg); } }
+/* Main nav --------------------*/
+.nav-main {
+  width: 45%;
+  position: fixed;
+  left: 0;
+  bottom: 5px;
+  width: 30%;
+  z-index: 5; }
+  @media screen and (min-width: 600px) {
+    .nav-main {
+      bottom: inherit;
+      top: 1%; } }
+
+.nav-main ul {
+  width: 60%; }
+
+.nav-main li {
+  color: #170c02;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 5%;
+  background: #b7ada5;
+  text-decoration: none;
+  padding: 5%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Amatic SC", cursive;
+  transition: all .3s ease-out; }
+
+.nav-main li:hover {
+  background: #ff4729;
+  transform: scale(1.2);
+  padding-left: 15%; }
+
+.content-main {
+  margin: 5%;
+  margin-top: 0;
+  text-align: center; }
+
+.intro {
+  margin-bottom: 1vh; }
+  @media screen and (min-width: 600px) {
+    .intro {
+      font-size: 1.5rem; } }
+
+.brews ul {
+  background: rgba(224, 216, 208, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline; }
+  @media screen and (min-width: 600px) {
+    .brews ul {
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 900px) {
+    .brews ul {
+      flex-wrap: nowrap; } }
+
+.brews li {
+  position: relative;
+  padding: 10px;
+  max-width: 33%; }
+  @media screen and (min-width: 600px) {
+    .brews li {
+      max-width: 33%; } }
+  @media screen and (min-width: 900px) {
+    .brews li {
+      max-width: 100%; } }
+
+.brews img {
+  padding: 10% 5%;
+  background: rgba(224, 216, 208, 0.4);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: block; }
+
+.brews cite {
+  background: rgba(224, 216, 208, 0.7);
+  color: #170c02;
+  display: block;
+  border-radius: 10px;
+  flex-grow: 1; }
+
+.brews span {
+  display: block;
+  background: #e0d8d0; }
+
+@media screen and (min-width: 900px) {
+  .main-flexbox {
+    display: flex;
+    justify-content: flex-end; } }
+
+@media screen and (min-width: 900px) {
+  .contact-form {
+    flex-grow: 2;
+    margin-left: 6%; } }
+
+.contact-form form {
+  background: #e0d8d0;
+  border-radius: 10px;
+  text-align: right;
+  padding: 6% 30%;
+  padding-left: 0; }
+
+/*Social media nav menu----------*/
+.social-media {
+  bottom: 5px;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  background: rgba(224, 216, 208, 0.65); }
+  @media screen and (min-width: 600px) {
+    .social-media {
+      bottom: inherit;
+      top: 0; } }
+
+.social-media ul {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  margin-left: 50%; }
+  @media screen and (min-width: 600px) {
+    .social-media ul {
+      margin-left: 80%; } }
+
+.social-media li {
+  margin: 4% 4%;
+  margin-bottom: 5px;
+  transition: all .3s ease-out;
+  width: 100%; }
+
+.social-media li:hover {
+  transform: scale(1.5); }
+
+.main-footer {
+  width: 100%;
+  text-align: right;
+  padding: 5%;
+  margin-bottom: 15%;
+  display: block; }
+  @media screen and (min-width: 600px) {
+    .main-footer {
+      margin-bottom: inherit;
+      margin-top: inherit; } }
+
+/*# sourceMappingURL=main.css.map */

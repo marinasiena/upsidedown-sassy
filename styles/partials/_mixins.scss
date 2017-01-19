@@ -1,0 +1,26 @@
+@mixin bp($point) {
+    @if $point == medium {
+        @media screen and (min-width: 600px) { @content; }
+    }
+    @else if $point == large {
+        @media screen and (min-width: 900px) { @content; }
+    }
+}
+
+// @mixin vcenter {
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+//
+// @mixin 
+//
+// // @mixin border-radius($radius) {
+//     border-radius: $radius;
+// }
+// @mixin gradient($start, $end) {
+//     background: $start;
+//     background: -webkit-linear-gradient($start, $end);
+//     background: -o-linear-gradient($start, $end);
+//     background: -moz-linear-gradient($start, $end);
+//     background: linear-gradient($start, $end);
+// }
